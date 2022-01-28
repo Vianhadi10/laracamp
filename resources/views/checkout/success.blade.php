@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
 <section class="checkout">
         <div class="container">
             <div class="row text-center">
@@ -15,7 +14,7 @@
                     <h2 class="primary-header ">
                         Berhasil Checkout
                     </h2>
-                    <a href="#" class="btn btn-primary mt-3">
+                    <a href="{{route('dashboard')}}" class="btn btn-primary mt-3">
                         My Dashboard
                     </a>
                 </div>

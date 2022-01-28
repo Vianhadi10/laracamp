@@ -23,7 +23,7 @@ public function handleProviderCallback(){
             $data = [
                 'name' => $callback->getName(),
                 'email' => $callback->getEmail(),
-                'avata' => $callback->getAvatar(),
+                'avatar' => $callback->getAvatar(),
                 'email_verified_at' => date('Y-m-d H:i:s', time()),
             ];
             $user = User::FirstOrCreate(['email' => $data['email']], $data);
